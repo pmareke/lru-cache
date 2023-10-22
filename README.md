@@ -13,6 +13,12 @@
 - The latest element read from the cache should be the most-recently-use item in the cache.
 - The `get` function must run in O(1) average time complexity.
 
+## Components
+
+- `Node`: basic unit of information with the value, next and previous.
+- `DoubleLinkedList`: a list with nodes connected in a double way (previuos and next).
+- `LRUCache`: main component, it has a `DoubleLinkedList` and hash to stores the `Nodes`.
+
 ## How to run the project
 
 ```sh
