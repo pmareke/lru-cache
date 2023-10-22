@@ -52,9 +52,7 @@ class DoubleLinkedList
   def items
     node = @head
     items = []
-    loop do
-      break if node.nil?
-
+    until node.nil?
       items << node.value
       node = node.next
     end
