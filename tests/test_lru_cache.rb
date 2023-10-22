@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative "../lru_cache"
-require "minitest/autorun"
 
 class TestDoubleLinkedList < Minitest::Test
   def test_add_elements_to_the_cache_if_not_exist

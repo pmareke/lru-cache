@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require_relative "../src/double_linked_list"
-require "minitest/autorun"
 
 class TestDoubleLinkedList < Minitest::Test
   def setup
