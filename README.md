@@ -1,4 +1,4 @@
-# LRU (Least recently used) cache
+# LRU (Least recently used) cache [![test](https://github.com/pmareke/lru-cache/actions/workflows/test.yml/badge.svg)](https://github.com/pmareke/lru-cache/actions/workflows/test.yml)
 
 - This type of cache discards least-recently-used items first.0
 - This algorithm requires keeping track of what was used and when.
