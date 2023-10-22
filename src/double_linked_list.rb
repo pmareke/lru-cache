@@ -40,7 +40,6 @@ class DoubleLinkedList
 
       @head = node.next
       node.next.previuos = nil if node.next
-      return
     end
 
     previous_node = node.previous
