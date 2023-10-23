@@ -2,7 +2,7 @@
 
 require_relative "../lru_cache"
 
-class TestDoubleLinkedList < Minitest::Test
+class TestLRUCache < Minitest::Test
   def test_add_elements_to_the_cache_if_not_exist
     lru_cache = LRUCache.new
 
