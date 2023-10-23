@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Cache
+class UnoptimizedLRUCache
   def initialize(capacity = 100)
     @capacity = capacity
     @cache = {}

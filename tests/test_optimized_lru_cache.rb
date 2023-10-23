@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "../lru_cache"
+require_relative "../optimized_lru_cache"
 
-class TestLRUCache < Minitest::Test
+class TestOptimizedLRUCache < Minitest::Test
   def test_add_elements_to_the_cache_if_not_exist
-    lru_cache = LRUCache.new
+    lru_cache = OptimizedLRUCache.new
 
     assert_equal [], lru_cache.items
 
@@ -14,7 +14,7 @@ class TestLRUCache < Minitest::Test
   end
 
   def test_does_not_add_duplicate_element_to_the_cache
-    lru_cache = LRUCache.new
+    lru_cache = OptimizedLRUCache.new
 
     lru_cache.get(1)
     lru_cache.get(1)
@@ -23,7 +23,7 @@ class TestLRUCache < Minitest::Test
   end
 
   def test_cache_has_a_limit_capacity
-    lru_cache = LRUCache.new(3)
+    lru_cache = OptimizedLRUCache.new(3)
 
     lru_cache.get(1)
     lru_cache.get(2)
@@ -34,7 +34,7 @@ class TestLRUCache < Minitest::Test
   end
 
   def test_latest_when_new_elements_arrive
-    lru_cache = LRUCache.new(4)
+    lru_cache = OptimizedLRUCache.new(4)
 
     lru_cache.get(1)
     lru_cache.get(2)

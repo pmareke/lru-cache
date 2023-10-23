@@ -2,7 +2,7 @@
 
 require_relative "src/double_linked_list"
 
-class LRUCache
+class OptimizedLRUCache
   def initialize(capacity = 100)
     @capacity = capacity
     @cache = {}
