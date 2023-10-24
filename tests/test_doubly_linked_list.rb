@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "../src/double_linked_list"
+require_relative "../src/doubly_linked_list"
 
-class TestDoubleLinkedList < Minitest::Test
+class TestDoublyLinkedList < Minitest::Test
   def setup
-    @list = DoubleLinkedList.new(3)
+    @list = DoublyLinkedList.new(3)
   end
 
   def test_create_an_empty_linked_list

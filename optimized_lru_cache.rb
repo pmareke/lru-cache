@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
-require_relative "src/double_linked_list"
+require_relative "src/doubly_linked_list"
 
 class OptimizedLRUCache
   def initialize(capacity = 100)
     @capacity = capacity
     @cache = {}
-    @queue = DoubleLinkedList.new(capacity)
+    @queue = DoublyLinkedList.new(capacity)
   end
 
   def get(element)

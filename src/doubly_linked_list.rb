@@ -2,7 +2,7 @@
 
 require_relative "node"
 
-class DoubleLinkedList
+class DoublyLinkedList
   attr_reader :head, :tail
 
   def initialize(capacity)
